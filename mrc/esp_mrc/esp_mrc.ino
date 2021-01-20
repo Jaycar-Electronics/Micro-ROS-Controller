@@ -77,7 +77,7 @@ void processSerialData()
 
   if (send)
   {
-    UDP.beginPacket("10.0.100.119",1337);
+    UDP.beginPacket(HOST_IP,1337);
     UDP.write(byte);
     UDP.endPacket();
     //syncData(&button);

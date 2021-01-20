@@ -18,6 +18,7 @@ function install_ROS(){
 
   sudo apt update
   sudo apt install ros-foxy-desktop -y
+  sudo apt install ros-foxy-turtlesim -y
 }
 
 function install_python_depends(){
@@ -37,7 +38,8 @@ echo "your own system if you want to."
 echo ""
 echo "Note that this will only work for ubuntu 20.04 derivatives and earlier"
 echo "(20.10 is not yet supported in ROS2.)"
-echo "while not attempted, raspbian is usually slow, and so should be ok."
+echo "while not attempted, raspbian is usually slow to update, "
+echo "and so should be ok."
 
 echo "if you encounter any issues, hit up the ros2 link:"
 echo "https://index.ros.org/doc/ros2/Installation/Foxy/Linux-Install-Debians/"

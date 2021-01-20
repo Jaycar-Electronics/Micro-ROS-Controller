@@ -1,10 +1,10 @@
 # import eventlet first and monkeypatch.
 import eventlet
 eventlet.monkey_patch()
-# import remaining libraries. We do this so the auto-formatter doesn't ruin
-# the import order when it's in a block.
 
 if True:
+    # import remaining libraries. We do this so the auto-formatter doesn't ruin
+    # the import order when it's in a block.
 
     import socket  # for UDP
 
@@ -42,7 +42,7 @@ class MRCNode(Node):
 
     def __init__(self, *args, publish_to_topic, subscribe_to_topic):
         super(MyNode, self).__init__('my_node')
-        self.log = self.get_logger() #shorthand
+        self.log = self.get_logger()  # shorthand
         self.log.info('initialising network connections')
 
         # Create UDP
@@ -131,10 +131,9 @@ class MRCNode(Node):
                 msg.angular.z = angular_speed
             elif data == 'r':
                 msg.angular.z = -angular_speed
-            else: #it's not a character that we know about.
+            else:  # it's not a character that we know about.
                 continue
 
             # Publish the Twist message on the network.
             self.publisher.publish(msg)
             self.log.info(f'UDP publish [{data}] = {msg}').
-
