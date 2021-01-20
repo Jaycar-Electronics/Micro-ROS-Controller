@@ -34,7 +34,7 @@ This tutorial gives you everything you need to set up a ROS environment on your 
 
 ## Building the Micro-Ros-Controller project
 
-<div id='instructions'> For a complete breakdown of how it works, check out website at https://jaycar.com.au/micro-ros-controller </div>
+<div id='instructions'> For a complete breakdown of how it works, check out website at https://jaycar.com.au/ros-controller </div>
 
 ## Use
 
